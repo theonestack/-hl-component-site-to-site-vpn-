@@ -1,0 +1,10 @@
+test_metadata:
+  type: config
+  name: tunnel_options
+  description: set cloudformation supported tunnel options
+
+customer_gateway_bgpasn: 65000
+
+tunnel_options:
+  - PreSharedKey: '{{resolve:ssm:/environment/vpn/PreSharedKey:1}}'
+  - TunnelInsideCidr: '169.254.216.196/30'

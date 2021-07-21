@@ -1,0 +1,6 @@
+test_metadata:
+  type: config
+  name: default
+  description: default test for site-to-site vpn
+
+customer_gateway_bgpasn: 65000

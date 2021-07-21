@@ -1,0 +1,66 @@
+test_metadata:
+  type: config
+  name: extended_tunnel_options
+  description: set cloudformation unsupported tunnel options via CR
+
+customer_gateway_bgpasn: 65000
+
+tunnel_options_extended:
+  Phase1LifetimeSeconds: 28800
+  Phase2LifetimeSeconds: 3600
+  RekeyMarginTimeSeconds: 540
+  RekeyFuzzPercentage: 100
+  ReplayWindowSize: 1024
+  DPDTimeoutSeconds: 30
+  DPDTimeoutAction: clear
+  StartupAction: add
+  Phase1EncryptionAlgorithms:
+    - Value: AES128
+    - Value: AES256
+    - Value: AES128-GCM-16
+    - Value: AES256-GCM-16
+  Phase2EncryptionAlgorithms:
+    - Value: AES128
+    - Value: AES256
+    - Value: AES128-GCM-16
+    - Value: AES256-GCM-16
+  Phase1IntegrityAlgorithms:
+    - Value: SHA1
+    - Value: SHA2-256
+    - Value: SHA2-384
+    - Value: SHA2-512
+  Phase2IntegrityAlgorithms:
+    - Value: SHA1
+    - Value: SHA2-256
+    - Value: SHA2-384
+    - Value: SHA2-512
+  Phase1DHGroupNumbers:
+    - Value: 2
+    - Value: 14
+    - Value: 15
+    - Value: 16
+    - Value: 17
+    - Value: 18
+    - Value: 19
+    - Value: 20
+    - Value: 21
+    - Value: 22
+    - Value: 23
+    - Value: 24
+  Phase2DHGroupNumbers:
+    - Value: 2
+    - Value: 5
+    - Value: 14
+    - Value: 15
+    - Value: 16
+    - Value: 17
+    - Value: 18
+    - Value: 19
+    - Value: 20
+    - Value: 21
+    - Value: 22
+    - Value: 23
+    - Value: 24
+  IKEVersions:
+    - Value: ikev1
+    - Value: ikev2

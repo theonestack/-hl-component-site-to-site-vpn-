@@ -1,0 +1,7 @@
+test_metadata:
+  type: config
+  name: static_routes
+  description: use static routes 
+
+customer_gateway_bgpasn: 65000
+static_routes_only: true
