@@ -168,7 +168,7 @@ describe 'compiled component site-to-site-vpn' do
       end
       
       it "to have property Runtime" do
-          expect(resource["Properties"]["Runtime"]).to eq("python3.8")
+          expect(resource["Properties"]["Runtime"]).to eq("python3.11")
       end
       
       it "to have property Role" do
